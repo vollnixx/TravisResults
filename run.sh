@@ -1,4 +1,3 @@
 #!/bin/bash
-DATE=`date '+%Y-%m-%d %H:%M:%S'`
-cd TravisResults
-echo "Hello World" > $(DATE)
+DATE=`date '+%Y-%m-%d-%H:%M:%S'.txt`
+echo "Hello World" > "$DATE"
