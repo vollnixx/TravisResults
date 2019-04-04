@@ -3,7 +3,7 @@ DICTO_PATH="/tmp/dicto_latest.csv"
 PHPUNIT_PATH="/tmp/phpunit_latest.csv"
 
 DATE=`date '+%Y-%m-%d-%H:%M:%S'`
-cp "$PHPUNIT_PATH" > results/"phpunit_$TRAVIS_BUILD_NUMBER_$DATE.txt"
+cp "$PHPUNIT_PATH" results/"phpunit_$TRAVIS_BUILD_NUMBER_$DATE.txt"
 if [ -e "$PHPUNIT_PATH_TMP" ]
 	then
 		mv "$PHPUNIT_PATH_TMP" "data"
